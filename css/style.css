@@ -1263,3 +1263,10 @@ footer .credits a {
     bottom: 15px;
   }
 }
+
+
+.container-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Added grid layout */
+  gap: 40px;
+}
