@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <meta charset="utf-8">
   <title>Mathew Jolly Portfolio</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
+
+
+  
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -563,26 +569,25 @@
                     </h5>
                   </div>
                   <div>
-                      <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
+                      <form  id="submit-form" action="">
+                      
                       <div class="row">
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                             <div class="validation"></div>
                           </div>
                         </div>
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                             <div class="validation"></div>
                           </div>
                         </div>
                        
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <textarea class="form-control" name="Message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                             <div class="validation"></div>
                           </div>
                         </div>
@@ -593,6 +598,9 @@
                     </form>
                   </div>
                 </div>
+               
+             
+
                 <div class="col-md-6">
                   <div class="title-box-2 pt-4 pt-md-0">
                     <h5 class="title-left">
@@ -601,7 +609,7 @@
                   </div>
                   <div class="more-info">
                     <p class="lead">
-                      Whether you have a question, need assistance, or just want to say hello, we’re here for you. Reach out to us through any of the contact options below, and we'll get back to you as soon as possible. Let’s make something great together!
+                      Whether you have a question, need assistance, or just want to say hello, were here for you. Reach out to us through any of the contact options below, and we'll get back to you as soon as possible. Let’s make something great together!
                     </p>
                     <ul class="list-ico">
                       <li><span class="ion-ios-location"></span> Anachalil(H), Mariyilkalunku, Thodupuzha</li>
@@ -654,14 +662,31 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+ 
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
-
-  
-
  
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbworydnYshvtlkL0CXAvux19JiuGS5OcdFqfJVddeE2P91X3olfrMjGOzVTWA6PmCXS/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+
+            success:function (response){
+              Swal.fire("Form Submitted Successfully Thank You")
+             
+            },
+            error:function (err){
+              Swal.fire("Something Error")
+
+            }
+        })
+    })
+</script>
+
+
 </body>
 </html>
