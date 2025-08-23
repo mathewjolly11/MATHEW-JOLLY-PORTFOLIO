@@ -46,29 +46,39 @@ const Project = () => {
                     }}
                     className="proyectos-slider mySwiper"
                 >
+                    {/* RushRide */}
                     <SwiperSlide className='caja'>
-                        <img src={proyectImg(`./proyecto-app-18.png`)} alt='proyectos' />
+                        <img src={proyectImg(`./rushride.png`)} alt='RushRide' />
                         <div className="content">
-                            <h3>CoinPlus</h3>
-                            <p>Trading platform for cryptocurrencies</p>
+                            <h3>RushRide</h3>
+                            <p>Local taxi pooling and transport management web application</p>
                             <p className="tecnologias">
-                                React <span> -</span> CSS <span> -</span> Redux <span> -</span> Bootstrap <span> -</span> TypeScript <span> -</span> Solidity <span> -</span> NodeJS <span> -</span> MongoDB
+                                HTML5 <span> -</span> CSS3 <span> -</span> JavaScript <span> -</span> PHP <span> -</span> MySQL
                             </p>
-                            <a href="https://coin-plus.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/CoinPlus" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a href="YOUR_RUSHRIDE_LINK" className="custom-btn btn" target="_blank" rel="noopener noreferrer">
+                                <span>Demo</span>
+                            </a>
+                            <a href="YOUR_RUSHRIDE_REPO_LINK" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">
+                                Repository
+                            </a>
                         </div>
                     </SwiperSlide>
 
+                    {/* AVJ Farm */}
                     <SwiperSlide className='caja'>
-                        <img src={proyectImg(`./proyecto-14.jpg`)} alt='proyectos' />
+                        <img src={proyectImg(`./avjfarm.png`)} alt='AVJ Farm' />
                         <div className="content">
-                            <h3>Justice</h3>
-                            <p>Lawyers website</p>
+                            <h3>AVJ Farm</h3>
+                            <p>Marketplace connecting farmers directly to consumers</p>
                             <p className="tecnologias">
-                                HTML5 <span> -</span> CSS <span> -</span> JavaScript <span> -</span> jQuery <span> -</span> Bootstrap
+                                HTML5 <span> -</span> CSS3 <span> -</span> JavaScript <span> -</span> PHP <span> -</span> MySQL
                             </p>
-                            <a href="https://nahuel61920.github.io/Justice/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/Nahuel61920/Justice" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a href="https://avjfarm.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer">
+                                <span>Demo</span>
+                            </a>
+                            <a href="YOUR_AVJFARM_REPO_LINK" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">
+                                Repository
+                            </a>
                         </div>
                     </SwiperSlide>
                 </Swiper>

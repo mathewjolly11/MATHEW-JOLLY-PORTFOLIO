@@ -1,111 +1,102 @@
 import React from 'react';
-import '../../pages/Service/ServicesPage.css'
+import '../../pages/Service/ServicesPage.css';
 import { Link } from 'react-router-dom';
 import { ButtomGet } from '../ButtomGet/ButtomGet';
 
-/* Multi idioma */
+/* Multi-language */
 import { FormattedMessage } from 'react-intl';
 
 const Service = () => (
     <section className="servicios" id="servicios">
         <h2 className="heading">
-            <FormattedMessage
-                id='services'
-                defaultMessage='Services'
-            />
+            <FormattedMessage id='services' defaultMessage='Services' />
         </h2>
         <div className="row">
+            {/* Design UX/UI */}
             <div className="columns" data-aos="fade-up" data-aos-delay="200">
                 <i className="fas fa-drafting-compass"></i>
                 <h3>
-                    <FormattedMessage
-                        id='design'
-                        defaultMessage='ADesign UX/UIboult me'
-                    />
+                    <FormattedMessage id='design' defaultMessage='Design UX/UI' />
                 </h3>
                 <p>
-                    <FormattedMessage
-                        id='design-info'
-                        defaultMessage='Design of attractive interfaces for both web and mobile users, making the most of the brand or product that the client wishes to exploit on their website'
+                    <FormattedMessage 
+                        id='design-info' 
+                        defaultMessage='Design of attractive interfaces for web and mobile, enhancing the brand or product.'
                     />
                 </p>
             </div>
+
+            {/* Web Development */}
             <div className="columns" data-aos="fade-up" data-aos-delay="300">
                 <i className="fas fa-laptop"></i>
                 <h3>
-                    <FormattedMessage
-                        id='development'
-                        defaultMessage='Web development'
-                    />
+                    <FormattedMessage id='development' defaultMessage='Web Development' />
                 </h3>
                 <p>
-                    <FormattedMessage
-                        id='development-info'
-                        defaultMessage='Creation of well-structured web pages, good responsive design, attractive color palette, with interactions that give the user satisfaction when browsing the website.'
+                    <FormattedMessage 
+                        id='development-info' 
+                        defaultMessage='Well-structured responsive web pages with interactive and user-friendly design.'
                     />
                 </p>
             </div>
+
+            {/* Digital Marketing */}
             <div className="columns" data-aos="fade-up" data-aos-delay="400">
                 <i className="fas fa-chart-line"></i>
                 <h3>
-                    <FormattedMessage
-                        id='marketing'
-                        defaultMessage='Digital marketing'
-                    />
+                    <FormattedMessage id='marketing' defaultMessage='Digital Marketing' />
                 </h3>
                 <p>
-                    <FormattedMessage
-                        id='marketing-info'
-                        defaultMessage='Complete maintenance of web pages to detect and solve errors, update content whether text, photos, web design elements, add new functions, etc.'
+                    <FormattedMessage 
+                        id='marketing-info' 
+                        defaultMessage='SEO and digital marketing strategies to increase your online visibility.'
                     />
                 </p>
             </div>
+
+            {/* Web Maintenance */}
             <div className="columns" data-aos="fade-up" data-aos-delay="500">
                 <i className="fas fa-wrench"></i>
                 <h3>
-                    <FormattedMessage
-                        id='maintenance'
-                        defaultMessage='Web maintenance'
-                    />
+                    <FormattedMessage id='maintenance' defaultMessage='Web Maintenance' />
                 </h3>
                 <p>
-                    <FormattedMessage
-                        id='maintenance-info'
-                        defaultMessage='Complete maintenance of web pages to detect and solve errors, update content whether text, photos, web design elements, add new functions, etc.'
+                    <FormattedMessage 
+                        id='maintenance-info' 
+                        defaultMessage='Complete maintenance, updates, bug fixes, and new functionality implementation.'
                     />
                 </p>
             </div>
+
+            {/* Mobile App Development */}
             <div className="columns" data-aos="fade-up" data-aos-delay="600">
-                <i className="fas fa-search"></i>
+                <i className="fas fa-mobile-alt"></i>
                 <h3>
-                    <FormattedMessage
-                        id='seo'
-                        defaultMessage='Web positioning (SEO)'
-                    />
+                    <FormattedMessage id='mobile-app' defaultMessage='Mobile App Development' />
                 </h3>
                 <p>
-                    <FormattedMessage
-                        id='seo-info'
-                        defaultMessage='Web positioning through SEO, so your website appears in the main search results according to your business, both in Google, Bing, or other internet search engines'
+                    <FormattedMessage 
+                        id='mobile-app-info' 
+                        defaultMessage='Design and develop native and cross-platform mobile applications with modern UI/UX.'
                     />
                 </p>
             </div>
+
+            {/* Cloud Solutions */}
             <div className="columns" data-aos="fade-up" data-aos-delay="700">
-                <i className="fas fa-tachometer-alt"></i>
+                <i className="fas fa-cloud"></i>
                 <h3>
-                    <FormattedMessage
-                        id='optimization'
-                        defaultMessage='Website optimization'
-                    />
+                    <FormattedMessage id='cloud-solutions' defaultMessage='Cloud Solutions' />
                 </h3>
                 <p>
-                    <FormattedMessage
-                        id='optimization-info'
-                        defaultMessage='Complete optimization of your web page, improving loading speed, using optimized images, a good URL, to give a better experience to users who visit the website'
+                    <FormattedMessage 
+                        id='cloud-solutions-info' 
+                        defaultMessage='Deploy and manage your applications on cloud platforms like AWS, Azure, or Google Cloud for scalability and security.'
                     />
                 </p>
             </div>
         </div>
+
         <div className='portafolio-btn'>
             <Link to="/service">
                 <ButtomGet/>
