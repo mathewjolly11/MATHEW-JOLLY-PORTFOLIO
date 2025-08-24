@@ -26,7 +26,7 @@ const Contact = () => (
     'Gmail',
     'WhatsApp',
     'Instagram',
-    'Telegram',
+    // 'Telegram',
     'Linkedin',
     'Github',
   ]}
@@ -77,7 +77,7 @@ const Contact = () => (
                     Instagram
                 </div>
             </a>
-            <a href="https://t.me/estebanU20" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+            {/* <a href="" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>
                     <span></span>
@@ -88,8 +88,8 @@ const Contact = () => (
                 <div className="text">
                     telegram
                 </div>
-            </a>
-            <a href="https://www.linkedin.com/in/mathew-jolly-34b558288/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+            </a> */}
+            <a href="https://www.linkedin.com/in/mathew-jolly-34b558288/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>
                     <span></span>
