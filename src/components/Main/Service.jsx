@@ -72,7 +72,7 @@ const Service = () => (
             <div className="columns" data-aos="fade-up" data-aos-delay="600">
                 <i className="fas fa-mobile-alt"></i>
                 <h3>
-                    <FormattedMessage id='mobile-app' defaultMessage='Mobile App Development' />
+                    <FormattedMessage id='mobile-app' defaultMessage='Mobile WebApp Development' />
                 </h3>
                 <p>
                     <FormattedMessage 
@@ -83,7 +83,7 @@ const Service = () => (
             </div>
 
             {/* Cloud Solutions */}
-            <div className="columns" data-aos="fade-up" data-aos-delay="700">
+            {/* <div className="columns" data-aos="fade-up" data-aos-delay="700">
                 <i className="fas fa-cloud"></i>
                 <h3>
                     <FormattedMessage id='cloud-solutions' defaultMessage='Cloud Solutions' />
@@ -94,7 +94,7 @@ const Service = () => (
                         defaultMessage='Deploy and manage your applications on cloud platforms like AWS, Azure, or Google Cloud for scalability and security.'
                     />
                 </p>
-            </div>
+            </div> */}
         </div>
 
         <div className='portafolio-btn'>

@@ -126,11 +126,11 @@ const About = () => (
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
     <h5>MySQL</h5>
   </div>
-  <div>
+  {/* <div>
     <img alt="Java" className="icons-skils"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
     <h5>Java</h5>
-  </div>
+  </div> */}
   <div>
     <img alt="C" className="icons-skils"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
