@@ -41,7 +41,7 @@ const Service = () => (
             </div>
 
             {/* Digital Marketing */}
-            <div className="columns" data-aos="fade-up" data-aos-delay="400">
+            {/* <div className="columns" data-aos="fade-up" data-aos-delay="400">
                 <i className="fas fa-chart-line"></i>
                 <h3>
                     <FormattedMessage id='marketing' defaultMessage='Digital Marketing' />
@@ -52,7 +52,7 @@ const Service = () => (
                         defaultMessage='SEO and digital marketing strategies to increase your online visibility.'
                     />
                 </p>
-            </div>
+            </div> */}
 
             {/* Web Maintenance */}
             <div className="columns" data-aos="fade-up" data-aos-delay="500">

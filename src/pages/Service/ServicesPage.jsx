@@ -46,7 +46,7 @@ const Services = () => {
               </p>
             </div>
 
-            <div className="columns" data-aos="fade-up" data-aos-delay="400">
+            {/* <div className="columns" data-aos="fade-up" data-aos-delay="400">
               <i className="fas fa-chart-line"></i>
               <h3>
                 <FormattedMessage id='marketing' defaultMessage='Digital Marketing' />
@@ -54,7 +54,7 @@ const Services = () => {
               <p>
                 <FormattedMessage id='marketing-info' defaultMessage='SEO and digital marketing strategies to increase your online visibility.' />
               </p>
-            </div>
+            </div> */}
 
             <div className="columns" data-aos="fade-up" data-aos-delay="500">
               <i className="fas fa-wrench"></i>
@@ -76,7 +76,7 @@ const Services = () => {
     </p>
   </div>
 
-  {/* New Service 2 */}
+  {/* New Service 2
   <div className="columns" data-aos="fade-up" data-aos-delay="900">
     <i className="fas fa-cloud"></i>
     <h3>
@@ -85,20 +85,20 @@ const Services = () => {
     <p>
       <FormattedMessage id='cloud-solutions-info' defaultMessage='Deploy and manage your applications on cloud platforms like AWS, Azure, or Google Cloud for scalability and security.' />
     </p>
-  </div>
+  </div> */}
           </div>
         </section>
 
         {/* Pricing Section */}
         <section className="site-services">
           <h2 className="heading">
-            <FormattedMessage id='services-price' defaultMessage='Pricing' />
+            {/* <FormattedMessage id='services-price' defaultMessage='Pricing' /> */}
           </h2>
 
           <div className="row">
 
             {/* Essential Plan */}
-            <div className="columns" data-aos="fade-up" data-aos-delay="200">
+            {/* <div className="columns" data-aos="fade-up" data-aos-delay="200">
               <h3>Essential</h3>
               <h4 className="sub-title">Perfect for new businesses</h4>
               <p className="numero"><span>₹</span>13,100</p>
@@ -110,10 +110,10 @@ const Services = () => {
                 <li><i className="fas fa-check"></i> Hosting for 1 year</li>
                 <li><i className="fas fa-check"></i> Delivered in 5 business days</li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Professional Plan */}
-            <div className="columns recomendado" data-aos="fade-up" data-aos-delay="300">
+            {/* <div className="columns recomendado" data-aos="fade-up" data-aos-delay="300">
               <h3>Professional</h3>
               <h4 className="sub-title">Designed for medium businesses</h4>
               <p className="numero"><span>₹</span>34,700</p>
@@ -127,10 +127,10 @@ const Services = () => {
                 <li><i className="fas fa-check"></i> Free maintenance for 6 months</li>
                 <li><i className="fas fa-check"></i> Delivered in 7 business days</li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Premium Plan */}
-            <div className="columns" data-aos="fade-up" data-aos-delay="400">
+            {/* <div className="columns" data-aos="fade-up" data-aos-delay="400">
               <h3>Premium</h3>
               <h4 className="sub-title">Ideal for large websites</h4>
               <p className="numero"><span>₹</span>61,200</p>
@@ -144,7 +144,7 @@ const Services = () => {
                 <li><i className="fas fa-check"></i> Free maintenance for 1 year</li>
                 <li><i className="fas fa-check"></i> Delivered in 14 business days</li>
               </ul>
-            </div>
+            </div> */}
 
           </div>
         </section>
@@ -173,12 +173,12 @@ const Services = () => {
               dataAos="fade-right"
               dataAosDelay="300"
             />
-            <Accordion
+            {/* <Accordion
               title="How to pay?"
               content="Payments can be made online via credit/debit card or bank transfer."
               dataAos="fade-left"
               dataAosDelay="300"
-            />
+            /> */}
           </div>
         </section>
 

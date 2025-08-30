@@ -174,13 +174,13 @@ const About = () => {
                 <p className="skill-info">
                   <FormattedMessage
                     id="about-skills-4"
-                    defaultMessage="Experience building interactive, scalable, and dynamic applications with React."
+                    defaultMessage="Currently learning ReactJS and exploring how to build interactive and dynamic user interfaces."
                   />
                 </p>
               </div>
 
               {/* Node.js */}
-              <div
+              {/* <div
                 className="skill-card"
                 data-aos="flip-up"
                 data-aos-delay="300"
@@ -198,7 +198,7 @@ const About = () => {
                     defaultMessage="Proficient in creating back-end services and APIs with Node.js and Express."
                   />
                 </p>
-              </div>
+              </div> */}
 
               {/* PHP */}
               <div
@@ -300,7 +300,7 @@ const About = () => {
                 <p className="skill-info">
                   <FormattedMessage
                     id="about-skills-10"
-                    defaultMessage="Experience in Java programming, building applications and understanding OOP concepts."
+                    defaultMessage="Currently learning JavaScript and exploring core concepts."
                   />
                 </p>
               </div>
