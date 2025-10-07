@@ -55,10 +55,10 @@ const Project = () => {
                             <p className="tecnologias">
                                 HTML5 <span> -</span> CSS3 <span> -</span> JavaScript <span> -</span> PHP <span> -</span> MySQL
                             </p>
-                            <a href="YOUR_RUSHRIDE_LINK" className="custom-btn btn" target="_blank" rel="noopener noreferrer">
+                            <a href="https://rushridetaxipooling.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer">
                                 <span>Demo</span>
                             </a>
-                            <a href="YOUR_RUSHRIDE_REPO_LINK" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">
+                            <a href="https://rushridetaxipooling.vercel.app/" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">
                                 Repository
                             </a>
                         </div>
