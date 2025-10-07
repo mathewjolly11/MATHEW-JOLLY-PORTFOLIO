@@ -18,7 +18,7 @@ const projectsData = [
     preview: "rushride.png",
     description: "RushRide: Local taxi pooling and transport management web application.",
     features: "Features include driver booking, route management, and user-friendly interface.",
-    link: "YOUR_RUSHRIDE_LINK",
+    link: "https://rushridetaxipooling.vercel.app/",
     technologies: ["html5", "css3", "javascript", "php"]
   },
   {
