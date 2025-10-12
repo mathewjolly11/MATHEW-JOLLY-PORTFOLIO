@@ -30,6 +30,16 @@ const projectsData = [
     features: "Includes product catalog, order management, and smooth checkout system.",
     link: "https://avjfarm.vercel.app/",
     technologies: ["html5", "css3", "javascript", "php", "mysql"]
+  },
+  {
+    id: 3,
+    title: "Memory Quest",
+    img: "memoryquest.png",
+    preview: "memoryquest.png",
+    description: "Memory Quest: Engaging memory card game to challenge and improve your memory skills.",
+    features: "Features multiple levels, score tracking, and interactive gameplay.",
+    link: "https://memorygamebymathew.vercel.app/",
+    technologies: ["html5", "css3", "javascript"]
   }
 ];
 
