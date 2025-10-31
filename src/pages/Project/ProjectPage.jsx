@@ -40,6 +40,16 @@ const projectsData = [
     features: "Features multiple levels, score tracking, and interactive gameplay.",
     link: "https://memorygamebymathew.vercel.app/",
     technologies: ["html5", "css3", "javascript"]
+  },
+  {
+    id: 4,
+    title: "Future Predictor",
+    img: "futurepredictor.png",
+    preview: "futurepredictor.png",
+    description: "Future Predictor: AI-powered future prediction app that gives realistic predictions in Malayalam using Gemini API.",
+    features: "Features name and DOB input, AI-generated predictions, smooth animations, and futuristic UI design.",
+    link: "https://futurepredictorbymathew.vercel.app/",
+    technologies: ["react", "javascript", "css3"]
   }
 ];
 
@@ -69,12 +79,12 @@ const Project = () => {
         <section className="projects__grid paginas-web">
           {projectsData.map(project => (
             <div className="projects__item" key={project.id}>
-              <a onClick={() => openModal(project)}>
+              <div onClick={() => openModal(project)} style={{cursor: 'pointer'}}>
                 <img src={proyectsImg(`./${project.img}`)} alt={project.title} className="projects__img" />
                 <div className="projects__overlay">
                   <h3>{project.title}</h3>
                 </div>
-              </a>
+              </div>
             </div>
           ))}
         </section>
@@ -91,7 +101,17 @@ const Project = () => {
                 <p>{selectedProject.description}</p>
                 <p>{selectedProject.features}</p>
                 <div className="eins-modal-text-2">
-                  <span>Link:</span> <a href={selectedProject.link} target="_blank">{selectedProject.title} Live</a>
+                  <span>Link:</span> <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">{selectedProject.title} Live</a>
+                </div>
+                <div className="eins-modal-text-2">
+                  <a
+                    href={`https://wa.me/9633264055?text=Hi, can you share the repository for ${selectedProject.title}? The live link is: ${selectedProject.link}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="custom-btn btn-codigo"
+                  >
+                    Chat for Repo
+                  </a>
                 </div>
                 <div className="eins-modal-text-3">
                   <span>Used technology:</span>

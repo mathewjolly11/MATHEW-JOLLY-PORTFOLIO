@@ -134,6 +134,36 @@ const Project = () => {
               </a>
             </div>
           </SwiperSlide>
+
+          {/* Future Predictor */}
+          <SwiperSlide className="caja">
+            <img src={proyectImg(`./futurepredictor.png`)} alt="Future Predictor" />
+            <div className="content">
+              <h3>Future Predictor</h3>
+              <p>
+                AI-powered future prediction app that gives realistic predictions in Malayalam
+              </p>
+              <p className="tecnologias">
+                React <span> -</span> JavaScript <span> -</span> CSS3 <span> -</span> Gemini API
+              </p>
+              <a
+                href="https://futurepredictorbymathew.vercel.app/"
+                className="custom-btn btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Demo</span>
+              </a>
+              <a
+                href={`https://wa.me/9633264055?text=Hi, can you share the repository for Future Predictor? The live link is: https://futurepredictorbymathew.vercel.app/`}
+                className="custom-btn btn-codigo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Repository
+              </a>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
 
