@@ -57,7 +57,7 @@ const Project = () => {
                 <span> -</span> PHP <span> -</span> MySQL
               </p>
               <a
-                href="https://rushridetaxipooling.vercel.app/"
+                href="https://rushridetaxipooling.infinityfree.me/"
                 className="custom-btn btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -65,7 +65,7 @@ const Project = () => {
                 <span>Demo</span>
               </a>
               <a
-                href={`https://wa.me/9633264055?text=Hi, can you share the repository for RushRide? The live link is: https://rushridetaxipooling.vercel.app/`}
+                href={`https://wa.me/9633264055?text=Hi, can you share the repository for RushRide? The live link is: https://rushridetaxipooling.infinityfree.me/`}
                 className="custom-btn btn-codigo"
                 target="_blank"
                 rel="noopener noreferrer"
