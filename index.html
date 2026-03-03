@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="description"
+      content="Mathew Jolly Portfolio - Full Stack Developer specializing in React, Node.js, and high-performance web experiences. View my projects and services."
+    />
+    <title>Mathew Jolly Portfolio</title>
+
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <!-- —— Primary SEO —— -->
+    <meta name="keywords" content="Mathew Jolly, Mathew Jolly Portfolio, Mathew Jolly Developer, Full Stack Developer, Web Developer, Web Designer, Kerala Developer, React Developer" />
+    <meta name="author" content="Mathew Jolly" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mathewjolly.vercel.app/" />
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mathew Jolly",
+        "url": "https://mathewjolly.vercel.app/",
+        "jobTitle": "Full Stack Developer",
+        "description": "Mathew Jolly is a Full Stack Developer building modern, responsive, and scalable web applications.",
+        "sameAs": [
+          "https://github.com/mathewjolly11",
+          "https://www.linkedin.com/in/mathewjolly"
+        ]
+      }
+    </script>
+
+    <!-- —— Open Graph / Facebook —— -->
+    <meta property="og:title" content="Mathew Jolly Portfolio" />
+    <meta property="og:description" content="Explore the portfolio of Mathew Jolly, a Full Stack Developer building premium digital experiences." />
+    <meta property="og:url" content="https://mathewjolly.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mathewjolly.vercel.app/assets/mjlogo.png" />
+    <meta property="og:image:secure_url" content="https://mathewjolly.vercel.app/assets/mjlogo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- —— Twitter Card —— -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mathew Jolly Portfolio" />
+    <meta name="twitter:description" content="Explore my projects, web development services, and creative designs." />
+    <meta name="twitter:image" content="https://mathewjolly.vercel.app/assets/mjlogo.png" />
+
+    <!-- —— Favicon —— -->
+    <link rel="icon" type="image/png" href="assets/mjlogo.png" />
+
+    <!-- Bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!-- FontAwesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cursor glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Background orbs -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">&lt;<span>Mathew</span>/&gt;</a>
+        <button
+          class="btn-sidebar-toggle d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebarMenu"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav gap-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a
+                class="btn-primary-custom"
+                href="#contact"
+                style="padding: 0.5rem 1.3rem; font-size: 0.85rem"
+              >
+                <i class="bi bi-send"></i> Hire Me
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- ===== OFFCANVAS SIDEBAR ===== -->
+    <div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="sidebarMenu">
+      <div class="offcanvas-header justify-content-end">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="sidebar-content">
+          <div class="sidebar-brand mb-5">
+            &lt;<span>Mathew</span>/&gt;
+          </div>
+          <ul class="sidebar-nav">
+            <a href="#about" class="sidebar-link"><i class="bi bi-person"></i>About</a>
+            <a href="#skills" class="sidebar-link"><i class="bi bi-lightning"></i>Skills</a>
+            <a href="#projects" class="sidebar-link"><i class="bi bi-grid"></i>Projects</a>
+            <a href="#services" class="sidebar-link"><i class="bi bi-briefcase"></i>Services</a>
+            <a href="#contact" class="sidebar-link"><i class="bi bi-envelope"></i>Contact</a>
+          </ul>
+          <div class="sidebar-footer mt-auto pt-5">
+            <p class="text-secondary small">Follow Me</p>
+            <div class="d-flex gap-3 social-mini">
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text -->
+          <div class="col-lg-6">
+            <div class="hero-tag">
+              <span class="dot"></span>
+              Hello, welcome to my portfolio
+            </div>
+            <h1 class="hero-title">
+              I'm <span class="gradient-text">Mathew Jolly</span><br />
+              <span
+                class="typed-text"
+                style="color: var(--text-secondary); font-size: 0.9em"
+              ></span
+              ><span style="color: var(--accent)">|</span>
+            </h1>
+            <p class="hero-subtitle">
+              Passionate full-stack developer building responsive, optimized,
+              and scalable web applications. I love turning ideas into impactful
+              digital experiences with clean, maintainable code.
+            </p>
+            <div class="hero-cta">
+              <a class="btn-primary-custom" href="#projects">
+                <i class="bi bi-grid-3x3-gap"></i> View My Work
+              </a>
+              <a class="btn-outline-custom" href="#contact">
+                <i class="bi bi-chat-dots"></i> Let's Talk
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-value" data-target="3" data-suffix="+">0+</div>
+                <div class="stat-label">Years Exp.</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" data-target="18" data-suffix="+">
+                  0+
+                </div>
+                <div class="stat-label">Projects Built</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" data-target="12" data-suffix="+">
+                  0+
+                </div>
+                <div class="stat-label">Technologies</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Avatar -->
+          <div class="col-lg-6">
+            <div class="hero-image-wrap">
+              <div class="hero-image-ring ring-1"></div>
+              <div class="hero-image-ring ring-2"></div>
+              <img
+                src="assets/profile.png"
+                alt="Mathew Jolly"
+                class="hero-avatar"
+              />
+
+              <div class="hero-badge badge-tl">
+                <i class="bi bi-code-slash"></i>
+                Full Stack Developer
+              </div>
+              <div class="hero-badge badge-br">
+                <span class="badge-dot"></span>
+                Open to opportunities
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-label">Get to know me</p>
+          <h2 class="fs-1 fw-bold">
+            About <span class="gradient-text">Me</span>
+          </h2>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5 reveal d-flex">
+            <div class="about-img-wrap w-100">
+              <img src="assets/profile.jpg" alt="Mathew Jolly" />
+              <div class="about-img-overlay"></div>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal reveal-delay-2">
+            <div class="about-card">
+              <p class="section-label">My Story</p>
+              <h3 class="fs-3 fw-bold mb-3">
+                Turning ideas into
+                <span class="gradient-text">digital reality</span>
+              </h3>
+              <p
+                style="
+                  color: var(--text-secondary);
+                  font-size: 0.95rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                Hi, I'm Mathew Jolly, a passionate full-stack developer. Since
+                2020, I've been building websites and applications, starting
+                with simple HTML &amp; CSS and now working with advanced
+                technologies like React, PHP, and MySQL.
+              </p>
+              <p
+                style="
+                  color: var(--text-secondary);
+                  font-size: 0.95rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                I'm self-taught and constantly learning — always exploring new
+                technologies, frameworks, and best practices to improve my
+                craft. I believe in continuous growth and adapting to the
+                ever-changing world of web development.
+              </p>
+              <p
+                style="
+                  color: var(--text-secondary);
+                  font-size: 0.95rem;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                Beyond coding, I enjoy cycling, programming as a hobby, and
+                coming up with new inventions — activities that keep me inspired
+                and innovative in my work.
+              </p>
+
+              <!-- Quick info -->
+              <div class="row g-2 mb-3" style="font-size: 0.87rem">
+                <div
+                  class="col-sm-6 d-flex gap-2 align-items-center"
+                  style="color: var(--text-secondary)"
+                >
+                  <i
+                    class="bi bi-person-badge"
+                    style="color: var(--accent)"
+                  ></i>
+                  <span
+                    ><b style="color: var(--text-primary)">Name:</b> Mathew
+                    Jolly</span
+                  >
+                </div>
+                <div
+                  class="col-sm-6 d-flex gap-2 align-items-center"
+                  style="color: var(--text-secondary)"
+                >
+                  <i class="bi bi-briefcase" style="color: var(--accent)"></i>
+                  <span
+                    ><b style="color: var(--text-primary)">Role:</b> Full Stack
+                    Developer</span
+                  >
+                </div>
+                <div
+                  class="col-sm-6 d-flex gap-2 align-items-center"
+                  style="color: var(--text-secondary)"
+                >
+                  <i class="bi bi-calendar3" style="color: var(--accent)"></i>
+                  <span
+                    ><b style="color: var(--text-primary)">Since:</b> 2020</span
+                  >
+                </div>
+                <div
+                  class="col-sm-6 d-flex gap-2 align-items-center"
+                  style="color: var(--text-secondary)"
+                >
+                  <i class="bi bi-globe" style="color: var(--accent)"></i>
+                  <span
+                    ><b style="color: var(--text-primary)">Status:</b> Available
+                    for hire</span
+                  >
+                </div>
+              </div>
+
+              <div class="info-chips">
+                <span class="chip">React</span>
+                <span class="chip">PHP</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">UI/UX Design</span>
+              </div>
+
+              <div class="mt-4">
+                <a
+                  class="btn-primary-custom"
+                  href="assets/cv.pdf"
+                  download="Mathew_Jolly_CV.pdf"
+                >
+                  <i class="bi bi-download"></i> Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section
+      id="skills"
+      class="section-padding"
+      style="background: rgba(255, 255, 255, 0.01)"
+    >
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-label">What I work with</p>
+          <h2 class="fs-1 fw-bold">
+            My <span class="gradient-text">Skills</span>
+          </h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <span class="skill-icon"><i class="fa-brands fa-html5" style="color:#E34F26"></i></span>
+            <div class="skill-name">HTML5</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="95%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-1">
+            <span class="skill-icon"><i class="fa-solid fa-palette" style="color:var(--accent)"></i></span>
+            <div class="skill-name">CSS3</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="90%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <span class="skill-icon"><i class="fa-solid fa-bolt" style="color:var(--accent)"></i></span>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="88%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-3">
+            <span class="skill-icon"><i class="fa-brands fa-react" style="color:#61DAFB"></i></span>
+            <div class="skill-name">React</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <span class="skill-icon"><i class="fa-brands fa-node-js" style="color:#339933"></i></span>
+            <div class="skill-name">Node.js</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="78%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-1">
+            <span class="skill-icon"><i class="fa-brands fa-php" style="color:#777BB4"></i></span>
+            <div class="skill-name">PHP</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="82%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <span class="skill-icon"><i class="fa-solid fa-database" style="color:#4479A1"></i></span>
+            <div class="skill-name">MySQL</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-3">
+            <span class="skill-icon"><i class="fa-brands fa-java" style="color:#007396"></i></span>
+            <div class="skill-name">Java</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="72%"></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <span class="skill-icon"><i class="fa-solid fa-code" style="color:#00599C"></i></span>
+            <div class="skill-name">C / C++</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="70%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-1">
+            <span class="skill-icon"><i class="fa-brands fa-git-alt" style="color:#F1502F"></i></span>
+            <div class="skill-name">Git</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <span class="skill-icon"><i class="fa-brands fa-github" style="color:#fafafa"></i></span>
+            <div class="skill-name">GitHub</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="90%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-3">
+            <span class="skill-icon"><i class="fa-solid fa-caret-up" style="color:#fafafa"></i></span>
+            <div class="skill-name">Vercel</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <span class="skill-icon"><i class="fa-solid fa-server" style="color:#46E3B7"></i></span>
+            <div class="skill-name">Render</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-1">
+            <span class="skill-icon"><i class="fa-solid fa-n" style="color:#fafafa"></i></span>
+            <div class="skill-name">Next.js</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="82%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <span class="skill-icon"><i class="fa-brands fa-python" style="color:#3776AB"></i></span>
+            <div class="skill-name">Python</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-3">
+            <span class="skill-icon"><i class="fa-solid fa-d" style="color:#092E20"></i></span>
+            <div class="skill-name">Django</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="75%"></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <span class="skill-icon"><i class="fa-solid fa-database" style="color:#3ECF8E"></i></span>
+            <div class="skill-name">Supabase</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-1">
+            <span class="skill-icon"><i class="fa-solid fa-table" style="color:#0F9D58"></i></span>
+            <div class="skill-name">Sheets</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="90%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <span class="skill-icon"><i class="fa-solid fa-image" style="color:#31A8FF"></i></span>
+            <div class="skill-name">Photoshop</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <span class="skill-icon"><i class="fa-brands fa-bootstrap" style="color:#7952B3"></i></span>
+            <div class="skill-name">Bootstrap</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="86%"></div></div>
+          </div>
+          <div class="skill-card reveal reveal-delay-3">
+            <span class="skill-icon"><i class="fa-solid fa-bezier-curve" style="color:var(--accent)"></i></span>
+            <div class="skill-name">UI/UX Design</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="75%"></div></div>
+          </div>
+        </div>
+</div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-label">What I've built</p>
+          <h2 class="fs-1 fw-bold">My <span class="gradient-text">Projects</span></h2>
+          <p class="mt-2" style="color:var(--text-secondary);max-width:500px;margin:0.6rem auto 0;font-size:0.93rem;">Real-world projects built with modern technologies.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- AVJ Farm -->
+          <div class="col-md-6 col-xl-4 reveal">
+            <div class="project-card h-100">
+              <img src="assets/avjfarm.png" alt="AVJ Farm" class="project-img" />
+              <div class="project-body">
+                <div class="project-tags"><span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span class="project-tag">JavaScript</span><span class="project-tag">PHP</span><span class="project-tag">MySQL</span></div>
+                <h4 class="project-title">AVJ Farm</h4>
+                <p class="project-desc">Marketplace connecting farmers directly to consumers with product listings and an ordering system.</p>
+                <div class="project-links">
+                  <a class="proj-link" href="https://avjfarm.vercel.app/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Future Predictor -->
+          <div class="col-md-6 col-xl-4 reveal reveal-delay-1">
+            <div class="project-card h-100">
+              <img src="assets/futurepredictor.png" alt="Future Predictor" class="project-img" />
+              <div class="project-body">
+                <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">JavaScript</span><span class="project-tag">CSS3</span><span class="project-tag">Gemini API</span></div>
+                <h4 class="project-title">Future Predictor</h4>
+                <p class="project-desc">AI-powered future prediction app that gives realistic predictions in Malayalam using Google Gemini API.</p>
+                <div class="project-links">
+                  <a class="proj-link" href="https://futurepredictorbymathew.vercel.app/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory Quest -->
+          <div class="col-md-6 col-xl-4 reveal reveal-delay-2">
+            <div class="project-card h-100">
+              <img src="assets/memoryquest.png" alt="Memory Quest" class="project-img" />
+              <div class="project-body">
+                <div class="project-tags"><span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span class="project-tag">JavaScript</span></div>
+                <h4 class="project-title">Memory Quest</h4>
+                <p class="project-desc">Engaging memory card game designed to challenge and improve your memory skills with multiple difficulty levels.</p>
+                <div class="project-links">
+                  <a class="proj-link" href="https://memorygamebymathew.vercel.app/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rush Ride -->
+          <div class="col-md-6 col-xl-4 project-item-hidden">
+            <div class="project-card h-100">
+              <img src="assets/rushride.png" alt="Rush Ride" class="project-img" />
+              <div class="project-body">
+                <div class="project-tags"><span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span class="project-tag">JavaScript</span><span class="project-tag">PHP</span><span class="project-tag">MySQL</span></div>
+                <h4 class="project-title">Rush Ride</h4>
+                <p class="project-desc">Local taxi pooling and transport management web application with real-time booking and driver coordination.</p>
+                <div class="project-links">
+                  <a class="proj-link" href="https://rushridetaxipooling.infinityfree.me/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Queue Manager -->
+          <div class="col-md-6 col-xl-4 project-item-hidden">
+            <div class="project-card h-100">
+              <img src="assets/quemanager.png" alt="Queue Manager" class="project-img" />
+              <div class="project-body">
+                <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Node.js</span><span class="project-tag">MongoDB</span></div>
+                <h4 class="project-title">Queue Manager</h4>
+                <p class="project-desc">Smart queue management system for efficiently managing customer flow and wait times in real time.</p>
+                <div class="project-links"><a class="proj-link" href="https://quemanager.vercel.app/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BioBin Connect -->
+          <div class="col-md-6 col-xl-4 project-item-hidden">
+            <div class="project-card h-100">
+              <img src="assets/biobinconnect.png" alt="BioBin Connect" class="project-img" />
+              <div class="project-body">
+                <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Node.js</span><span class="project-tag">MongoDB</span></div>
+                <h4 class="project-title">BioBin Connect</h4>
+                <p class="project-desc">Smart waste management platform connecting households, collectors, and composters for efficient bio-waste processing.</p>
+                <div class="project-links"><a class="proj-link" href="https://biobinconnect.onrender.com/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="text-center mt-5 reveal">
+          <button id="showMoreProjects" class="btn-outline-custom">
+            <i class="bi bi-plus-circle me-2"></i> View More Projects
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section
+      id="services"
+      class="section-padding"
+      style="background: rgba(255, 255, 255, 0.01)"
+    >
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-label">What I offer</p>
+          <h2 class="fs-1 fw-bold">
+            My <span class="gradient-text">Services</span>
+          </h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="about-card text-center h-100">
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 16px;
+                  background: rgba(108, 99, 255, 0.12);
+                  border: 1px solid var(--border-accent);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 1.2rem;
+                  font-size: 1.6rem;
+                "
+              >
+                <i class="fa-solid fa-palette" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">UI/UX Design</h5>
+              <p style="color: var(--text-secondary); font-size: 0.88rem">
+                I design modern and intuitive interfaces that create meaningful
+                user experiences with clean, engaging visuals.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <div class="about-card text-center h-100">
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 16px;
+                  background: rgba(108, 99, 255, 0.12);
+                  border: 1px solid var(--border-accent);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 1.2rem;
+                  font-size: 1.6rem;
+                "
+              >
+                <i class="fa-solid fa-laptop-code" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Web Development</h5>
+              <p style="color: var(--text-secondary); font-size: 0.88rem">
+                Building responsive, optimized, and scalable applications using
+                PHP, React, Node.js, and JavaScript.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <div class="about-card text-center h-100">
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 16px;
+                  background: rgba(108, 99, 255, 0.12);
+                  border: 1px solid var(--border-accent);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 1.2rem;
+                  font-size: 1.6rem;
+                "
+              >
+                <i class="fa-solid fa-chart-line" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">SEO Optimization</h5>
+              <p style="color: var(--text-secondary); font-size: 0.88rem">
+                Improving visibility in Google and other search engines with
+                optimized content and well-structured code.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 service-item-hidden">
+            <div class="about-card text-center h-100">
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 16px;
+                  background: rgba(108, 99, 255, 0.12);
+                  border: 1px solid var(--border-accent);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 1.2rem;
+                  font-size: 1.6rem;
+                "
+              >
+                <i class="fa-solid fa-wrench" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Web Maintenance</h5>
+              <p style="color: var(--text-secondary); font-size: 0.88rem">
+                Keeping websites updated, secure, and optimized with new
+                features and performance improvements whenever needed.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 service-item-hidden">
+            <div class="about-card text-center h-100">
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 16px;
+                  background: rgba(108, 99, 255, 0.12);
+                  border: 1px solid var(--border-accent);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 1.2rem;
+                  font-size: 1.6rem;
+                "
+              >
+                <i class="fa-solid fa-bolt" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Performance Optimization</h5>
+              <p style="color: var(--text-secondary); font-size: 0.88rem">
+                Enhancing website performance with fast load times, optimized
+                assets, and efficient, clean code.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 service-item-hidden">
+            <div class="about-card text-center h-100">
+              <div
+                style="
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 16px;
+                  background: rgba(108, 99, 255, 0.12);
+                  border: 1px solid var(--border-accent);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 1.2rem;
+                  font-size: 1.6rem;
+                "
+              >
+                <i class="fa-solid fa-server" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Web Hosting &amp; DNS</h5>
+              <p style="color: var(--text-secondary); font-size: 0.88rem">
+                Deploying websites using modern hosting platforms, configuring custom domains, and managing DNS routing seamlessly.
+              </p>
+            </div>
+          </div>
+
+          <!-- E-Commerce -->
+          <div class="col-md-6 col-lg-4 service-item-hidden">
+            <div class="about-card text-center h-100">
+              <div style="width:60px;height:60px;border-radius:16px;background:rgba(108,99,255,0.12);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.6rem;">
+                <i class="fa-solid fa-cart-shopping" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">E-Commerce Platforms</h5>
+              <p style="color:var(--text-secondary);font-size:0.88rem">Building feature-rich online stores with product management, cart, payments, and a seamless shopping experience.</p>
+            </div>
+          </div>
+
+          <!-- Web Apps & Portals -->
+          <div class="col-md-6 col-lg-4 service-item-hidden">
+            <div class="about-card text-center h-100">
+              <div style="width:60px;height:60px;border-radius:16px;background:rgba(108,99,255,0.12);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.6rem;">
+                <i class="fa-solid fa-gears" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Web Apps &amp; Portals</h5>
+              <p style="color:var(--text-secondary);font-size:0.88rem">Developing custom web applications and management portals tailored to your business workflows and needs.</p>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-6 col-lg-4 service-item-hidden">
+            <div class="about-card text-center h-100">
+              <div style="width:60px;height:60px;border-radius:16px;background:rgba(108,99,255,0.12);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.6rem;">
+                <i class="fa-solid fa-bullhorn" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Social Media Handling</h5>
+              <p style="color:var(--text-secondary);font-size:0.88rem">Managing and growing your social media presence with strategic content, consistent branding, and audience engagement.</p>
+            </div>
+          </div>
+
+          <!-- Video Editing -->
+          <div class="col-md-6 col-lg-4 service-item-hidden">
+            <div class="about-card text-center h-100">
+              <div style="width:60px;height:60px;border-radius:16px;background:rgba(108,99,255,0.12);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.6rem;">
+                <i class="fa-solid fa-video" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Product Shooting &amp; Video Editing</h5>
+              <p style="color:var(--text-secondary);font-size:0.88rem">Creating high-quality product visuals and compelling video content edited for maximum impact across all platforms.</p>
+            </div>
+          </div>
+
+          <!-- Poster Design -->
+          <div class="col-md-6 col-lg-4 service-item-hidden">
+            <div class="about-card text-center h-100">
+              <div style="width:60px;height:60px;border-radius:16px;background:rgba(108,99,255,0.12);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.6rem;">
+                <i class="fa-solid fa-pen-ruler" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Poster &amp; Banner Design</h5>
+              <p style="color:var(--text-secondary);font-size:0.88rem">Designing eye-catching posters, banners, and creatives that communicate your brand message clearly and beautifully.</p>
+            </div>
+          </div>
+
+          <!-- Webinar & Training -->
+          <div class="col-md-6 col-lg-4 service-item-hidden">
+            <div class="about-card text-center h-100">
+              <div style="width:60px;height:60px;border-radius:16px;background:rgba(108,99,255,0.12);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.6rem;">
+                <i class="fa-solid fa-chalkboard-user" style="color:var(--accent)"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Webinar &amp; Training</h5>
+              <p style="color:var(--text-secondary);font-size:0.88rem">Teaching individuals and teams how to build websites, manage hosting, configure DNS, and deploy online — step by step.</p>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Mobile only show more -->
+        <div class="text-center mt-5 d-lg-none reveal">
+          <button id="showMoreServices" class="btn-outline-custom">
+            <i class="bi bi-plus-circle me-2"></i> View All Services
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section-padding" style="padding-bottom: 20px;">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-label">Get in touch</p>
+          <h2 class="fs-1 fw-bold">
+            Let's <span class="gradient-text">Work Together</span>
+          </h2>
+          <p
+            class="mt-2"
+            style="
+              color: var(--text-secondary);
+              max-width: 480px;
+              margin: 0.75rem auto 0;
+            "
+          >
+            Have a project in mind or want to collaborate? I'd love to hear from
+            you. Let's build something great together.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Social Info -->
+          <div class="col-lg-4 reveal">
+            <div class="contact-card h-100">
+              <h4 class="fw-bold mb-3">Find Me Online</h4>
+              <p
+                style="
+                  color: var(--text-secondary);
+                  font-size: 0.88rem;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                Connect with me on any of these platforms — I'm always open to
+                new opportunities, collaborations, and conversations.
+              </p>
+
+              <div class="d-flex flex-column gap-3" style="font-size: 0.9rem">
+                <a
+                  href="https://www.linkedin.com/in/mathew-jolly-34b558288/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="d-flex gap-3 align-items-center"
+                  style="text-decoration: none; color: var(--text-primary)"
+                >
+                  <div
+                    style="
+                      width: 42px;
+                      height: 42px;
+                      border-radius: 12px;
+                      background: rgba(10, 102, 194, 0.15);
+                      border: 1px solid rgba(10, 102, 194, 0.3);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-shrink: 0;
+                    "
+                  >
+                    <i
+                      class="bi bi-linkedin"
+                      style="color: #0a66c2; font-size: 1.1rem"
+                    ></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        color: var(--text-muted);
+                        font-size: 0.72rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                      "
+                    >
+                      LinkedIn
+                    </div>
+                    <div>Mathew Jolly</div>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/mathewjolly11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="d-flex gap-3 align-items-center"
+                  style="text-decoration: none; color: var(--text-primary)"
+                >
+                  <div
+                    style="
+                      width: 42px;
+                      height: 42px;
+                      border-radius: 12px;
+                      background: rgba(255, 255, 255, 0.06);
+                      border: 1px solid var(--border);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-shrink: 0;
+                    "
+                  >
+                    <i
+                      class="bi bi-github"
+                      style="color: var(--text-primary); font-size: 1.1rem"
+                    ></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        color: var(--text-muted);
+                        font-size: 0.72rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                      "
+                    >
+                      GitHub
+                    </div>
+                    <div>mathewjolly11</div>
+                  </div>
+                </a>
+                <a
+                  href="https://www.instagram.com/mathew_anachalil/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="d-flex gap-3 align-items-center"
+                  style="text-decoration: none; color: var(--text-primary)"
+                >
+                  <div
+                    style="
+                      width: 42px;
+                      height: 42px;
+                      border-radius: 12px;
+                      background: rgba(225, 48, 108, 0.12);
+                      border: 1px solid rgba(225, 48, 108, 0.25);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-shrink: 0;
+                    "
+                  >
+                    <i
+                      class="bi bi-instagram"
+                      style="color: #e1306c; font-size: 1.1rem"
+                    ></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        color: var(--text-muted);
+                        font-size: 0.72rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                      "
+                    >
+                      Instagram
+                    </div>
+                    <div>mathew_anachalil</div>
+                  </div>
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=9633264055"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="d-flex gap-3 align-items-center"
+                  style="text-decoration: none; color: var(--text-primary)"
+                >
+                  <div
+                    style="
+                      width: 42px;
+                      height: 42px;
+                      border-radius: 12px;
+                      background: rgba(37, 211, 102, 0.12);
+                      border: 1px solid rgba(37, 211, 102, 0.25);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-shrink: 0;
+                    "
+                  >
+                    <i
+                      class="bi bi-whatsapp"
+                      style="color: #25d366; font-size: 1.1rem"
+                    ></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        color: var(--text-muted);
+                        font-size: 0.72rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                      "
+                    >
+                      WhatsApp
+                    </div>
+                    <div>Send a message</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="col-lg-6 reveal reveal-delay-2">
+            <div class="contact-card">
+              <h4 class="fw-bold mb-3">Send a Message</h4>
+              <form id="contactForm" novalidate>
+                <div class="row g-0">
+                  <div class="col-sm-6 pe-sm-2">
+                    <input
+                      type="text"
+                      name="name"
+                      id="nameInput"
+                      class="form-control-custom"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6 ps-sm-2">
+                    <input
+                      type="email"
+                      name="email"
+                      id="emailInput"
+                      class="form-control-custom"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subjectInput"
+                  class="form-control-custom"
+                  placeholder="Subject"
+                />
+                <textarea
+                  name="message"
+                  id="messageInput"
+                  class="form-control-custom"
+                  placeholder="Tell me about your project..."
+                ></textarea>
+                <button
+                  type="submit"
+                  class="btn-primary-custom w-100"
+                  style="justify-content: center"
+                >
+                  <i class="bi bi-send"></i> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="container">
+        <p>
+          Page created by <span>Mathew Jolly</span> &mdash; &copy;
+          <span id="year"></span> All rights reserved.
+        </p>
+        <p class="mt-1" style="color: var(--text-muted); font-size: 0.75rem">
+          Built with <i class="fa-solid fa-heart" style="color: var(--pink); font-size: 0.8rem;"></i> using HTML,
+          Bootstrap 5 &amp; Vanilla JS
+        </p>
+        <div class="footer-versions mt-2 d-flex justify-content-center gap-2 align-items-center" style="font-size: 0.75rem;">
+          <a href="https://mathewjolly.vercel.app/" target="_blank" class="text-decoration-none" style="color: var(--accent); opacity: 0.8;">Portfolio v1</a>
+          <span style="color: var(--border);">|</span>
+          <a href="https://mathewjolly1.vercel.app/" target="_blank" class="text-decoration-none" style="color: var(--accent); opacity: 0.8;">Portfolio v2</a>
+        </div>
+        <button id="backToTop" class="back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+      </div>
+    </footer>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
