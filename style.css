@@ -53,6 +53,7 @@ body.lock-scroll {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 85px;
 }
 
 body {
@@ -60,7 +61,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.7;
-  overflow-x: clip; /* Use clip not hidden — prevents Bootstrap row margins from being clipped */
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -219,11 +220,11 @@ h5 {
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   transition: var(--transition);
-  z-index: 1000;
+  z-index: 1030;
 }
 #mainNav.scrolled {
-  background: rgba(10, 10, 15, 0.92);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  background: rgba(10, 10, 15, 0.95) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
 }
 .navbar-brand {
   font-family: var(--font-mono);
@@ -274,6 +275,7 @@ h5 {
 section {
   position: relative;
   z-index: 1;
+  scroll-margin-top: 85px;
 }
 .section-padding {
   padding: 100px 0;
@@ -349,10 +351,6 @@ section {
   font-size: 2.2rem;
   font-weight: 800;
   line-height: 1;
-  
-  
-  
-  
 }
 .stat-label {
   font-size: 0.78rem;
@@ -529,7 +527,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  font-family:
+    "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
 }
 .skill-name {
   font-size: 0.8rem;
@@ -552,8 +551,6 @@ section {
   transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
   width: 0;
 }
-
-
 
 /* ── PROJECTS ── */
 .project-card {
@@ -668,7 +665,6 @@ section {
 .proj-item.hidden {
   display: none;
 }
-
 
 /* ── EXPERIENCE ── */
 .timeline {
@@ -927,14 +923,18 @@ body.swal2-height-auto {
     filter: blur(40px) !important;
     animation: none !important;
   }
-  .about-card, .contact-card, .hero-badge, #mainNav {
+  .about-card,
+  .contact-card,
+  .hero-badge,
+  #mainNav {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
   }
   #mainNav {
     background: rgba(10, 10, 15, 0.98) !important;
   }
-  .about-card, .contact-card {
+  .about-card,
+  .contact-card {
     background: rgba(255, 255, 255, 0.06);
   }
 
@@ -1098,19 +1098,27 @@ body.swal2-height-auto {
 
 /* ── Page Load Fade In ── */
 @keyframes pageFadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
-  animation: pageFadeIn 0.6s ease both;
+  animation: pageFadeIn 0.8s ease-out both;
 }
-
 
 /* ── Hero Avatar Float ── */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-14px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
 }
 .hero-image-wrap {
   animation: float 5s ease-in-out infinite;
@@ -1124,33 +1132,54 @@ body {
   transform: translateY(36px);
   will-change: transform, opacity;
   backface-visibility: hidden;
-  transition: opacity 0.65s cubic-bezier(0.4,0,0.2,1),
-              transform 0.65s cubic-bezier(0.4,0,0.2,1);
+  transition:
+    opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
-.reveal-delay-1.visible { transition-delay: 0.1s; }
-.reveal-delay-2.visible { transition-delay: 0.2s; }
-.reveal-delay-3.visible { transition-delay: 0.3s; }
+.reveal-delay-1.visible {
+  transition-delay: 0.1s;
+}
+.reveal-delay-2.visible {
+  transition-delay: 0.2s;
+}
+.reveal-delay-3.visible {
+  transition-delay: 0.3s;
+}
 
 /* ── Skill card pop-in ── */
 @keyframes cardPop {
-  0%   { opacity: 0; transform: scale(0.85) translateY(20px); }
-  70%  { transform: scale(1.04) translateY(-2px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translateY(20px);
+  }
+  70% {
+    transform: scale(1.04) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 .skill-card.visible {
-  animation: cardPop 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+  animation: cardPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
   will-change: transform, opacity;
   backface-visibility: hidden;
 }
 
 /* ── Section label slide-in ── */
 @keyframes labelSlide {
-  from { opacity: 0; letter-spacing: 0.4em; }
-  to   { opacity: 1; letter-spacing: 0.18em; }
+  from {
+    opacity: 0;
+    letter-spacing: 0.4em;
+  }
+  to {
+    opacity: 1;
+    letter-spacing: 0.18em;
+  }
 }
 .section-label {
   animation: none; /* triggered via JS on reveal */
@@ -1162,7 +1191,7 @@ body {
 
 /* ── Project card image zoom ── */
 .project-img {
-  transition: transform 0.45s cubic-bezier(0.4,0,0.2,1);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
   backface-visibility: hidden;
 }
@@ -1172,8 +1201,12 @@ body {
 
 /* ── Button ripple glow on click ── */
 @keyframes ripple {
-  0%   { box-shadow: 0 0 0 0 var(--accent-glow); }
-  100% { box-shadow: 0 0 0 18px transparent; }
+  0% {
+    box-shadow: 0 0 0 0 var(--accent-glow);
+  }
+  100% {
+    box-shadow: 0 0 0 18px transparent;
+  }
 }
 .btn-primary-custom:active {
   animation: ripple 0.4s ease;
@@ -1181,8 +1214,13 @@ body {
 
 /* ── Typing cursor blink ── */
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 .typed-cursor {
   display: inline-block;
@@ -1197,8 +1235,9 @@ body {
 
 /* ── Magnetic button (applied via JS) ── */
 .magnetic-btn {
-  transition: transform 0.2s cubic-bezier(0.33,1,0.68,1),
-              box-shadow 0.2s ease;
+  transition:
+    transform 0.2s cubic-bezier(0.33, 1, 0.68, 1),
+    box-shadow 0.2s ease;
 }
 
 /* ── Nav link underline slide ── */
@@ -1214,7 +1253,9 @@ body {
   height: 2px;
   background: linear-gradient(90deg, var(--accent), var(--cyan));
   border-radius: 99px;
-  transition: width 0.3s ease, left 0.3s ease;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
 }
 .nav-link:hover::after,
 .nav-link.active::after {
@@ -1224,10 +1265,18 @@ body {
 
 /* ── Orbs enhanced drift ── */
 @keyframes orbDrift {
-  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
-  33%  { transform: translate(30px, -20px) scale(1.06) rotate(3deg); }
-  66%  { transform: translate(-20px, 30px) scale(0.96) rotate(-2deg); }
-  100% { transform: translate(40px, 30px) scale(1.08) rotate(1deg); }
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(30px, -20px) scale(1.06) rotate(3deg);
+  }
+  66% {
+    transform: translate(-20px, 30px) scale(0.96) rotate(-2deg);
+  }
+  100% {
+    transform: translate(40px, 30px) scale(1.08) rotate(1deg);
+  }
 }
 
 /* ── Back to Top Button ── */
@@ -1341,8 +1390,14 @@ body {
 }
 
 @keyframes projectFadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ── Services Show More (Mobile Only) ── */
@@ -1394,6 +1449,3 @@ body {
   transform: scale(1.05);
   box-shadow: 0 0 20px var(--accent-glow);
 }
-
-
-

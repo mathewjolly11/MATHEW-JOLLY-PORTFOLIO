@@ -74,14 +74,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
     const selector = anchor.getAttribute('href');
     if (selector === '#') return;
-    const target = document.querySelector(selector);
-    if (!target) return;
-    e.preventDefault();
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    // Close mobile nav if open
-    const toggler = document.querySelector('.navbar-toggler');
-    const collapse = document.querySelector('.navbar-collapse');
-    if (collapse.classList.contains('show')) toggler.click();
+    try {
+      const target = document.querySelector(selector);
+      if (!target) return;
+      e.preventDefault();
+      
+      const sidebar = document.getElementById('sidebarMenu');
+      const headerOffset = 85; // Height of the fixed header + padding
+      
+      const scrollToTarget = () => {
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      };
+
+      if (sidebar && sidebar.classList.contains('show')) {
+        // Manually trigger close
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance(sidebar) || new bootstrap.Offcanvas(sidebar);
+        if (bsOffcanvas) bsOffcanvas.hide();
+        
+        // Wait for offcanvas to completely close before scrolling
+        // This prevents the page from jumping back to top when body scroll unlocks
+        setTimeout(scrollToTarget, 350);
+      } else {
+        scrollToTarget();
+      }
+    } catch (err) {
+      // Ignore invalid selectors
+    }
   });
 });
 
@@ -298,16 +321,7 @@ if (backToTop) {
   });
 }
 
-/* ── Sidebar Link Auto-Close ── */
-document.querySelectorAll('.sidebar-link').forEach(link => {
-  link.addEventListener('click', () => {
-    const sidebar = document.getElementById('sidebarMenu');
-    if (sidebar) {
-      const bsOffcanvas = bootstrap.Offcanvas.getInstance(sidebar);
-      if (bsOffcanvas) bsOffcanvas.hide();
-    }
-  });
-});
+
 
 /* ── Show More Projects Logic ── */
 const showMoreBtn = document.getElementById('showMoreProjects');
